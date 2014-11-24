@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{64bf6fe1-3a56-4217-b142-c4b8acad9b8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{e3328b72-d816-45bb-a565-b60a8e5c43f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication">
+      <UniqueIdentifier>{f6f5d3ff-7271-4e4a-a7f4-54fa4756f2ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene">
+      <UniqueIdentifier>{58c5009b-785f-44a6-a0fa-edc4557e7ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\resource">
+      <UniqueIdentifier>{b2018fc6-51d5-4b0b-899c-ef30ae33cc9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\utility">
+      <UniqueIdentifier>{64910c88-6834-49b3-8e5a-6ce8c17f442d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\title">
+      <UniqueIdentifier>{af063345-178d-45e4-bce3-daa77659308d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\stage">
+      <UniqueIdentifier>{ec13f0a4-8731-40e3-b135-840cd3d29076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object">
+      <UniqueIdentifier>{3eafa0ce-e748-4cc6-bf76-ca4dcc48df16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\character">
+      <UniqueIdentifier>{6018fd48-8866-4a59-8e95-fbb06efce32e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\character\player">
+      <UniqueIdentifier>{2531d81b-851b-40cb-aee1-372837670497}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\character\enemy">
+      <UniqueIdentifier>{4e923335-8dc0-4400-b0e0-348d9911fa2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\manager">
+      <UniqueIdentifier>{66e19c09-d034-4ea9-932f-efbe116ed67d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\regist">
+      <UniqueIdentifier>{7f7d4d8e-8157-42db-8a8d-1e43129d44be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\info">
+      <UniqueIdentifier>{7bc336ce-de8e-47cd-82cd-a15adb245e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\task">
+      <UniqueIdentifier>{3fe5e3cb-cbcb-43aa-b4ab-f8446549205c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\factory">
+      <UniqueIdentifier>{22c5070e-ed4a-46ee-bb32-54c5401475a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\lib\appEnv.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\audio.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\camera2D.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\fileUtil.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glExt.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glfwWindow.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\graph.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\matrix.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\os_win.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\png.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\random.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\texture.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\utils.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\wav.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\GameApplication.cpp">
+      <Filter>gameapplication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\resource\Resource.cpp">
+      <Filter>gameapplication\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\SceneManager.cpp">
+      <Filter>gameapplication\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\utility\Collision.cpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\utility\CRandom.cpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\utility\Font.cpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\utility\FontList.cpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\utility\Math.cpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\title\Title.cpp">
+      <Filter>gameapplication\scene\title</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\stage\Stage.cpp">
+      <Filter>gameapplication\scene\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\player\Player.cpp">
+      <Filter>gameapplication\object\character\player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\enemy\Enemy.cpp">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\SceneFactory.cpp">
+      <Filter>gameapplication\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\enemy\Dragon.cpp">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\enemy\Slime.cpp">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\info\ObjectInfoManager.cpp">
+      <Filter>gameapplication\object\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glTexture.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\appEnv.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\audio.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\camera2D.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\defines.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\fileUtil.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glExt.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glfwWindow.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\graph.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\matrix.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os_osx.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\os_win.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\png.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\random.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\texture.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\utils.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\vector.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\wav.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\Uncopyable.h">
+      <Filter>gameapplication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\GameApplication.h">
+      <Filter>gameapplication</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\Math.h">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\FontList.h">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\Font.h">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\CRandom.h">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\Collision.h">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\SceneManager.h">
+      <Filter>gameapplication\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\Scene.h">
+      <Filter>gameapplication\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\title\Title.h">
+      <Filter>gameapplication\scene\title</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\stage\Stage.h">
+      <Filter>gameapplication\scene\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\resource\Resource.h">
+      <Filter>gameapplication\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\Object.h">
+      <Filter>gameapplication\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\Character.h">
+      <Filter>gameapplication\object\character</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\player\Player.h">
+      <Filter>gameapplication\object\character\player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\enemy\Enemy.h">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\SceneFactory.h">
+      <Filter>gameapplication\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\enemy\Dragon.h">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\enemy\Slime.h">
+      <Filter>gameapplication\object\character\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\manager\ObjectManager.h">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\regist\ObjectRegist.h">
+      <Filter>gameapplication\object\regist</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\info\ObjectInfoManager.h">
+      <Filter>gameapplication\object\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\task\ObjectTask.h">
+      <Filter>gameapplication\task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\Transform.h">
+      <Filter>gameapplication\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\factory\EnemyFactory.h">
+      <Filter>gameapplication\object\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\factory\PlayerFactory.h">
+      <Filter>gameapplication\object\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\manager\EnemyManager.h">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\manager\PlayerManager.h">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\glTexture.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\info\ObjectInfo.h">
+      <Filter>gameapplication\object\info</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
