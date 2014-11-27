@@ -1,6 +1,7 @@
 #pragma once
 #include "../Scene.h"
 #include "../../resource/Resource.h"
+#include "../../utility/Font.h"
 #include <memory>
 
 class CSceneManager;
@@ -18,7 +19,14 @@ public:
 	//@•`‰æ
 	void Draw();
 
+	// “®‚«
+	void Round_trip_y();
+
+	float
+		y_plus,
+		y_;
+
 private:
-	
+	std::unique_ptr<Font>m_font;
 };
 

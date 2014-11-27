@@ -12,7 +12,8 @@ public:
 	enum class Type{
 		PLAYER,
 		ENMEY,
-		ITEM
+		ITEM,
+		MEN
 	};
 
 

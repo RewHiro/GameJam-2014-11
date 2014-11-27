@@ -46,5 +46,6 @@ protected:
 	void Regist(const std::wstring name ,const std::shared_ptr<Object>obj){
 		m_obj_regist->Regist(name, obj);
 	}
+
 };
 

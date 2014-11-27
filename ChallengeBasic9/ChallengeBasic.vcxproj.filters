@@ -52,6 +52,30 @@
     <Filter Include="gameapplication\object\factory">
       <UniqueIdentifier>{22c5070e-ed4a-46ee-bb32-54c5401475a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="gameapplication\camera">
+      <UniqueIdentifier>{757a9c68-eefa-447c-9d3d-ce84492adf34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\item">
+      <UniqueIdentifier>{64df6803-728a-453e-850a-d9f63a3d7e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\item\heart">
+      <UniqueIdentifier>{20c25b5c-1375-4c08-af0e-48157cb2ab6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\object\character\men">
+      <UniqueIdentifier>{bd6e05b6-7056-4c2d-ac91-0129031fab22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\result">
+      <UniqueIdentifier>{09fce833-89fe-4dac-9267-c2a594258b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\ranking">
+      <UniqueIdentifier>{a0d54af1-09c1-4b08-a8e7-dcfe5b6bee40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\rule">
+      <UniqueIdentifier>{b3631cd8-6082-4678-ba74-2cb4f1a539a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameapplication\scene\menu">
+      <UniqueIdentifier>{b76e6258-b339-4c19-80b6-daa9467fc8c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
@@ -136,17 +160,44 @@
     <ClCompile Include="src\gameapplication\scene\SceneFactory.cpp">
       <Filter>gameapplication\scene</Filter>
     </ClCompile>
-    <ClCompile Include="src\gameapplication\object\character\enemy\Dragon.cpp">
-      <Filter>gameapplication\object\character\enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="src\gameapplication\object\character\enemy\Slime.cpp">
-      <Filter>gameapplication\object\character\enemy</Filter>
-    </ClCompile>
     <ClCompile Include="src\gameapplication\object\info\ObjectInfoManager.cpp">
       <Filter>gameapplication\object\info</Filter>
     </ClCompile>
     <ClCompile Include="src\lib\glTexture.cpp">
       <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\camera\Camera.cpp">
+      <Filter>gameapplication\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\item\heart\Heart.cpp">
+      <Filter>gameapplication\object\item\heart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\item\heart\PoisonHeart.cpp">
+      <Filter>gameapplication\object\item\heart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\men\Men.cpp">
+      <Filter>gameapplication\object\character\men</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\manager\MenManager.cpp">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\manager\ItemManager.cpp">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\object\character\enemy\Girl.cpp">
+      <Filter>gameapplication\object\character</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\result\Result.cpp">
+      <Filter>gameapplication\scene\result</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\ranking\Ranking.cpp">
+      <Filter>gameapplication\scene\ranking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\rule\Rule.cpp">
+      <Filter>gameapplication\scene\rule</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gameapplication\scene\menu\Menu.cpp">
+      <Filter>gameapplication\scene\menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -255,12 +306,6 @@
     <ClInclude Include="src\gameapplication\scene\SceneFactory.h">
       <Filter>gameapplication\scene</Filter>
     </ClInclude>
-    <ClInclude Include="src\gameapplication\object\character\enemy\Dragon.h">
-      <Filter>gameapplication\object\character\enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="src\gameapplication\object\character\enemy\Slime.h">
-      <Filter>gameapplication\object\character\enemy</Filter>
-    </ClInclude>
     <ClInclude Include="src\gameapplication\object\manager\ObjectManager.h">
       <Filter>gameapplication\object\manager</Filter>
     </ClInclude>
@@ -294,5 +339,53 @@
     <ClInclude Include="src\gameapplication\object\info\ObjectInfo.h">
       <Filter>gameapplication\object\info</Filter>
     </ClInclude>
+    <ClInclude Include="src\gameapplication\camera\Camera.h">
+      <Filter>gameapplication\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\item\Item.h">
+      <Filter>gameapplication\object\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\item\heart\Heart.h">
+      <Filter>gameapplication\object\item\heart</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\item\heart\PoisonHeart.h">
+      <Filter>gameapplication\object\item\heart</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\manager\ItemManager.h">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\factory\ItemFactory.h">
+      <Filter>gameapplication\object\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\men\Men.h">
+      <Filter>gameapplication\object\character\men</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\factory\MenFactory.h">
+      <Filter>gameapplication\object\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\manager\MenManager.h">
+      <Filter>gameapplication\object\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\object\character\enemy\Girl.h">
+      <Filter>gameapplication\object\character</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\result\Result.h">
+      <Filter>gameapplication\scene\result</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\ranking\Ranking.h">
+      <Filter>gameapplication\scene\ranking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\rule\Rule.h">
+      <Filter>gameapplication\scene\rule</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\scene\menu\Menu.h">
+      <Filter>gameapplication\scene\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gameapplication\utility\disp_number.hpp">
+      <Filter>gameapplication\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\stage01.txt" />
   </ItemGroup>
 </Project>

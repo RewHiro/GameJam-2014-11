@@ -49,6 +49,14 @@ public:
 		m_pos.y() += y;
 	}
 
+	void PositionX(float x){
+		m_pos.x() = x;
+	}
+
+	void PositionY(float y){
+		m_pos.y() = y;
+	}
+
 	//@‰ñ“]²‚ğİ’è
 	void Rotation(const Vec2f& value){
 		m_rotate = value;

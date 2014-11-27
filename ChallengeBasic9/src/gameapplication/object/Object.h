@@ -24,7 +24,16 @@ public:
 	bool isRemove(){ return m_is_delete ? true : false; }
 
 	//　位置を取得
-	Vec2f GetPos()const{ return m_hit_model.GetPos(); }
+	Vec2f GetHitPos()const{ return m_hit_model.GetPos(); }
+
+	//　位置を取得
+	Vec2f GetPos()const{ return m_model.GetPos(); }
+
+	//　X位置を取得
+	float GetPosX()const{ return m_model.GetPosX(); }
+
+	//　Y位置を取得
+	float GetPosY()const{ return m_model.GetPosY(); }
 
 	//　位置を取得
 	Vec2f GetScale()const{ return m_hit_model.GetScale(); }

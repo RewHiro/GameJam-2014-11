@@ -83,13 +83,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\gameapplication\camera\Camera.cpp" />
     <ClCompile Include="src\gameapplication\GameApplication.cpp" />
-    <ClCompile Include="src\gameapplication\object\character\enemy\Dragon.cpp" />
     <ClCompile Include="src\gameapplication\object\character\enemy\Enemy.cpp" />
-    <ClCompile Include="src\gameapplication\object\character\enemy\Slime.cpp" />
+    <ClCompile Include="src\gameapplication\object\character\enemy\Girl.cpp" />
+    <ClCompile Include="src\gameapplication\object\character\men\Men.cpp" />
     <ClCompile Include="src\gameapplication\object\character\player\Player.cpp" />
     <ClCompile Include="src\gameapplication\object\info\ObjectInfoManager.cpp" />
+    <ClCompile Include="src\gameapplication\object\item\heart\Heart.cpp" />
+    <ClCompile Include="src\gameapplication\object\item\heart\PoisonHeart.cpp" />
+    <ClCompile Include="src\gameapplication\object\manager\ItemManager.cpp" />
+    <ClCompile Include="src\gameapplication\object\manager\MenManager.cpp" />
     <ClCompile Include="src\gameapplication\resource\Resource.cpp" />
+    <ClCompile Include="src\gameapplication\scene\menu\Menu.cpp" />
+    <ClCompile Include="src\gameapplication\scene\ranking\Ranking.cpp" />
+    <ClCompile Include="src\gameapplication\scene\result\Result.cpp" />
+    <ClCompile Include="src\gameapplication\scene\rule\Rule.cpp" />
     <ClCompile Include="src\gameapplication\scene\SceneFactory.cpp" />
     <ClCompile Include="src\gameapplication\scene\SceneManager.cpp" />
     <ClCompile Include="src\gameapplication\scene\stage\Stage.cpp" />
@@ -117,23 +126,35 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\gameapplication\camera\Camera.h" />
     <ClInclude Include="src\gameapplication\GameApplication.h" />
     <ClInclude Include="src\gameapplication\object\character\Character.h" />
-    <ClInclude Include="src\gameapplication\object\character\enemy\Dragon.h" />
     <ClInclude Include="src\gameapplication\object\character\enemy\Enemy.h" />
-    <ClInclude Include="src\gameapplication\object\character\enemy\Slime.h" />
+    <ClInclude Include="src\gameapplication\object\character\enemy\Girl.h" />
+    <ClInclude Include="src\gameapplication\object\character\men\Men.h" />
     <ClInclude Include="src\gameapplication\object\character\player\Player.h" />
+    <ClInclude Include="src\gameapplication\object\factory\MenFactory.h" />
     <ClInclude Include="src\gameapplication\object\factory\EnemyFactory.h" />
+    <ClInclude Include="src\gameapplication\object\factory\ItemFactory.h" />
     <ClInclude Include="src\gameapplication\object\factory\PlayerFactory.h" />
     <ClInclude Include="src\gameapplication\object\info\ObjectInfo.h" />
     <ClInclude Include="src\gameapplication\object\info\ObjectInfoManager.h" />
+    <ClInclude Include="src\gameapplication\object\item\heart\Heart.h" />
+    <ClInclude Include="src\gameapplication\object\item\heart\PoisonHeart.h" />
+    <ClInclude Include="src\gameapplication\object\item\Item.h" />
     <ClInclude Include="src\gameapplication\object\manager\EnemyManager.h" />
+    <ClInclude Include="src\gameapplication\object\manager\ItemManager.h" />
+    <ClInclude Include="src\gameapplication\object\manager\MenManager.h" />
     <ClInclude Include="src\gameapplication\object\manager\ObjectManager.h" />
     <ClInclude Include="src\gameapplication\object\manager\PlayerManager.h" />
     <ClInclude Include="src\gameapplication\object\Object.h" />
     <ClInclude Include="src\gameapplication\object\regist\ObjectRegist.h" />
     <ClInclude Include="src\gameapplication\object\Transform.h" />
     <ClInclude Include="src\gameapplication\resource\Resource.h" />
+    <ClInclude Include="src\gameapplication\scene\menu\Menu.h" />
+    <ClInclude Include="src\gameapplication\scene\ranking\Ranking.h" />
+    <ClInclude Include="src\gameapplication\scene\result\Result.h" />
+    <ClInclude Include="src\gameapplication\scene\rule\Rule.h" />
     <ClInclude Include="src\gameapplication\scene\SceneFactory.h" />
     <ClInclude Include="src\gameapplication\scene\Scene.h" />
     <ClInclude Include="src\gameapplication\scene\SceneManager.h" />
@@ -143,6 +164,7 @@
     <ClInclude Include="src\gameapplication\Uncopyable.h" />
     <ClInclude Include="src\gameapplication\utility\Collision.h" />
     <ClInclude Include="src\gameapplication\utility\CRandom.h" />
+    <ClInclude Include="src\gameapplication\utility\disp_number.hpp" />
     <ClInclude Include="src\gameapplication\utility\Font.h" />
     <ClInclude Include="src\gameapplication\utility\FontList.h" />
     <ClInclude Include="src\gameapplication\utility\Math.h" />
@@ -165,6 +187,9 @@
     <ClInclude Include="src\lib\utils.hpp" />
     <ClInclude Include="src\lib\vector.hpp" />
     <ClInclude Include="src\lib\wav.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\stage01.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

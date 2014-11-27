@@ -20,7 +20,10 @@ public:
 	enum class Type{
 		TITLE,
 		STAGE,
-		RESULT
+		RESULT,
+		RULE,
+		RANKING,
+		MENU
 	};
 
 	virtual ~CScene() = default;
@@ -32,8 +35,8 @@ public:
 	Type ChangeScene()const{ return m_change_scene; }
 
 	//　画面のサイズ
-	static const int WIDTH = 1320;
-	static const int HEIGHT = 720;
+	static const int WIDTH = 1000;
+	static const int HEIGHT = 700;
 
 protected:
 	std::shared_ptr<AppEnv>m_app_env;									//　アプリイベント

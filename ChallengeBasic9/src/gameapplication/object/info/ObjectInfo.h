@@ -45,9 +45,26 @@ public:
 	}
 
 	//　ポジションを取得
+	Vec2f GetHitPos(const ObjMapIt itr)const{
+		return itr->second->GetHitPos();
+	}
+
+	//　ポジションを取得
 	Vec2f GetPos(const ObjMapIt itr)const{
 		return itr->second->GetPos();
 	}
+
+
+	//　Xポジションを取得
+	float GetPosX(const ObjMapIt itr)const{
+		return itr->second->GetPosX();
+	}
+
+	//　Yポジションを取得
+	float GetPosY(const ObjMapIt itr)const{
+		return itr->second->GetPosY();
+	}
+
 
 	//　大きさを取得
 	Vec2f GetScale(const ObjMapIt itr)const{

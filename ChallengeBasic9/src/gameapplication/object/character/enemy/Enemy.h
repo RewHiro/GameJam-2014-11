@@ -8,10 +8,6 @@ class CEnemy : public CCharacter{
 public:
 	CEnemy();
 
-	enum class Type{
-		SLIME,
-		DRAGON
-	};
 
 	//@XV
 	void Update();

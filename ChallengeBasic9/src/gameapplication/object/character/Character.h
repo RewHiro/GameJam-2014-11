@@ -9,7 +9,6 @@ public:
 		m_res(CResource::GetInstance()){}
 
 protected:
-
 	CResource& m_res;
 };
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "../Object.h"
 #include <unordered_map>
+#include <forward_list>
 #include <string>
 
 //========================================
@@ -32,6 +33,7 @@ public:
 
 	//@íœ
 	void Erase(const ObjMapIt it){ m_obj_list.erase(it); }
+
 
 protected:
 	std::unordered_multimap < std::wstring, std::shared_ptr<Object>> m_obj_list;
